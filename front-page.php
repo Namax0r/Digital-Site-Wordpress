@@ -112,13 +112,13 @@
                     </article>
                     <div class="row" id="triple-photo-row">
                         <div class="col-md-4 col-sm-4">
-                            <img class="img-responsive center-block" src="../../img/ujsintx4r3.png" alt="Lab Photo">
+                            <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/img/ujsintx4r3.png" alt="Lab Photo">
                         </div>
                         <div class="col-md-4 col-sm-4">
-                            <img class="img-responsive center-block" src="../../img/9yn8a4p49e.png" alt="Lab Photo">
+                            <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/img/9yn8a4p49e.png" alt="Lab Photo">
                         </div>
                         <div class="col-md-4 col-sm-4">
-                            <img class="img-responsive center-block" src="../../img/ft5m4ql3k6.png" alt="Lab Photo">
+                            <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/img/ft5m4ql3k6.png" alt="Lab Photo">
                         </div>
                     </div>
                   </div>
