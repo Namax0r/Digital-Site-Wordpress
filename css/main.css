@@ -201,7 +201,30 @@ h3, h4, h2, #language-selector, #enlist-button {
 #enlist-tab {
     display: none;
 }
-
+#reg-rules-body {
+    background: none;
+    border: 1px solid #fbe77e;
+    color: #333;
+}
+#reg-rules-heading {
+    background: #fbe77e;
+    font-size: 18px;
+    color: #333;
+}
+#button {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  margin-top: 48px;
+}
+.form-control-feedback{
+  right: 10px !important;
+}
+.asterisk{
+  position: relative;
+  bottom: 2px;
+  font-size: 9px;
+  color: #ed1927;
+}
 /* ========================= */
 /* ======== NEWS ========= */
 .news-row{
