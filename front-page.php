@@ -9,13 +9,16 @@
     <meta name="keywords" content="Digital, Automation, University, Piraeus, Kalokasis, ikaros">
     <meta name="author" content="Eleni Kaisari, Patryk Futoma">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=greek' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=greek' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300&subset=greek' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
 <body>
     <!--[if lt IE 8]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
-
     <div class="container-fluid" id="wrapper">
         <div class="container-fluid" id="top-part">
             <div class="container">
@@ -79,7 +82,7 @@
                     </div>
                     <!-- /.container-fluid -->
                 </nav>
-                                <div class="jumbotron">
+                  <div class="jumbotron">
                     <div class="row">
                         <div class="col-md-9">
                             <div class="embed-responsive embed-responsive-16by9">
@@ -87,13 +90,32 @@
                             </div>
                         </div>
                         <div class="col-md-3" id="jumbotron-text">
-                            <h4 id="welcome-msg">Welcome to Digital Systems Website!</h4>
-
-                              <a href="../enlist/" id="enlist-button" class="btn btn-lg btn-block" >
-                                <i class="fa fa-clipboard"></i> Lab
-                                <br/> Registration
-                              </a>
-
+                          <div class="panel panel-default news-panel">
+                              <div class="panel-body text-center">
+                                  <h4>Τελευταία Νεα</h4>
+                              </div>
+                              <div class="panel-footer">
+                                <?php if( is_front_page() ) { ?>
+                                <?php
+                                 global $post;
+                                 $myposts = get_posts('numberposts=5');
+                                 foreach($myposts as $post) :
+                                 ?>
+                                 <div class="news-item">
+                                 <h4 class="news-title">
+                                     <a href="<?php the_permalink();  ?>"><?php the_title_limit( 18, '...'); ?></a>
+                                 </h4>
+                                 <ul class="news-info">
+                                   <li>
+                                     <i class="fa fa-calendar" aria-hidden="true"></i>
+                                     <?php the_time('F j, Y H:i');  ?>
+                                   </li>
+                                 </ul>
+                               </div>
+                                 <?php endforeach; ?>
+                                  <?php } ?>
+                              </div>
+                              </div>
                         </div>
                     </div>
                     <!-- /.row-->
@@ -122,4 +144,5 @@
                         </div>
                     </div>
                   </div>
+
                     <?php get_footer(); ?>

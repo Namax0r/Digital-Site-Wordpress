@@ -88,8 +88,10 @@ html {
 body {
     height: 100%;
     overflow: auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
     background: #eee;
+    background-image: url('../img/white_carbon.png');
 }
 a {
     text-decoration: none;
@@ -231,7 +233,11 @@ h3, h4, h2, #language-selector, #enlist-button {
 padding-bottom: 10px;
 border-bottom: 1px solid #eee;
 }
-.news-image{
+.news-panel {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.news-image {
     padding: 4px;
     border: 1px solid #d6d7d7;
 }
@@ -244,16 +250,25 @@ border-bottom: 1px solid #eee;
 }
 .news-title>a {
     text-decoration: none;
-    color: black;
+    color: #c0392b;
+}
+.news-title, .news-text {
+  overflow-wrap: normal;
+  overflow-wrap: break-word;
 }
 .news-title>a:hover {
-    color: #0287c7;
+    color: #2980b9;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
 }
-
+.news-item {
+  border-bottom: 1px solid #eee;
+}
+.news-img-container {
+  border-right: 1px solid #eee;
+}
 #container { height:100%; border-collapse:collapse; }
 
 .news-info, .news-info > li > a{
@@ -271,7 +286,10 @@ border-bottom: 1px solid #eee;
   list-style-type: none;
   display: inline;
 }
-
+.post-row {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
 .pagination {
 clear:both;
 padding:20px 0;
@@ -327,12 +345,22 @@ article {
 .jumbotron {
     border-radius: 0px !important;
     margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+#jumbotron-text {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+#jumbotron-text .panel-footer{
+    background: #fff;
 }
 .slide {
     max-height: 300px;
 }
 #middle-part {
     background: #eee;
+    background-image: url('../img/white_carbon.png');
     margin-bottom: 30px;
 }
 #page-content {
@@ -344,7 +372,7 @@ article {
 }
 #enlist-button {
     position: relative;
-    bottom: -280px; /* Edit here to change the position of an enlist button.
+    bottom: 10px; /* Edit here to change the position of an enlist button.
                        - more moves the button down. Don't forget px*/
     padding: 10px;
     font-size: 25px;
@@ -390,8 +418,13 @@ article {
     font-weight: bold;
 }
 .panel-body {
-    background: #2c3e50;
+    background: #202932;
+}
+.panel-body > h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: #eee;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .ribbon {
     margin-top: 10px;

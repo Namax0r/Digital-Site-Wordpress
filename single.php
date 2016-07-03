@@ -26,23 +26,21 @@
             </p>
 
             <hr>
-
-            <div class="row">
-                <table id="container">
-        <tr>
-        <td valign="top" class="news-image">
-          							   <a href="#">
-        							     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/PLACEHOLDER.jpg" alt="...">
-        							   </a>
-        </td>
-        <td valign="top">
-          <?php the_excerpt(); ?>
-        </td>
-        </tr>
-        </table>
-
-        							 </div>
-        							 <!--/.row-->
+                       <div class="row news-row">
+                         <div class="col-md-3 col-sm-3 news-img-container">
+                           <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                             <?php if ( has_post_thumbnail() ) {
+                             the_post_thumbnail('thumbnail', array('class' => 'img-responsive news-image'));
+                           } else { ?>
+                             <img src="<?php echo get_template_directory_uri(); ?>/img/PLACEHOLDER.jpg" class="img-responsive news-image" alt="...">
+                           <?php } ?>
+                         </a>
+                         </div>
+                         <div class="col-md-9 col-sm-9 news-text">
+                       <?php the_content(); ?>
+                         </div>
+                                  </div>
+                                  <!--/.row-->
         </div>
     </div>
     <div class="col-md-3">
