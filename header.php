@@ -14,6 +14,9 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300&subset=greek' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slimbox2.css" media="screen" type="text/css" />
+
     <?php wp_head(); ?>
 </head>
 
@@ -89,4 +92,3 @@
         <!-- /.container-fluid-->
         <div class="container-fluid" id="middle-part">
             <div class="container">
-            <?php dimox_breadcrumbs(); ?>

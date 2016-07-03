@@ -1,7 +1,7 @@
 <!-- Blog Sidebar Widgets Column -->
 <div class="panel panel-default">
     <div class="panel-body">
-        Archive
+        <h4>Archive</h4>
     </div>
     <div class="panel-footer">
         <ul>
@@ -11,12 +11,11 @@
 </div>
 <div class="panel panel-default">
     <div class="panel-body">
-        Calendar
+        <h4>Calendar</h4>
     </div>
     <div class="panel-footer">
-
-
-
+          <div id="datepicker" data-date="<?php echo date('m-d-Y'); ?>"></div>
+          <input type="hidden" id="my_hidden_input">
     </div>
 </div>
 

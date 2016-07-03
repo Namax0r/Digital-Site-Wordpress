@@ -124,6 +124,17 @@
     <!-- /#wrapper-->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() . '/js/bootstrap.min.js' ); ?>"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() . '/js/slimbox2.js' ); ?>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/locales/bootstrap-datepicker.el.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+    <script>
+    $('#datepicker').datepicker();
+      $('#datepicker').on("changeDate", function() {
+        $('#my_hidden_input').val(
+        $('#datepicker').datepicker('getFormattedDate')
+    );
+});
+    </script>
     <?php wp_footer(); ?>
 </body>
 

@@ -37,7 +37,7 @@ get_header(); ?>
           <!-- Archive Side Navigation -->
           <div class="panel panel-default">
               <div class="panel-body">
-                  Search:
+                  <h4>Search:</h4>
               </div>
               <div class="panel-footer">
                   <ul>
@@ -47,7 +47,7 @@ get_header(); ?>
           </div>
           <div class="panel panel-default">
               <div class="panel-body">
-                  Archives by Month:
+                  <h4>Archives by Month:</h4>
               </div>
               <div class="panel-footer">
                   <ul>
@@ -57,7 +57,7 @@ get_header(); ?>
           </div>
           <div class="panel panel-default">
               <div class="panel-body">
-                  Archives by Subject:
+                  <h4>Archives by Subject:</h4>
               </div>
               <div class="panel-footer">
                 <ul>
@@ -67,7 +67,7 @@ get_header(); ?>
           </div>
           <div class="panel panel-default">
               <div class="panel-body">
-                  Archives by Author:
+                  <h4>Archives by Author:</h4>
               </div>
               <div class="panel-footer">
                 <ul>

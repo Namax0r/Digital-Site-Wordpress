@@ -8,22 +8,16 @@
 
             <!-- Title -->
             <h1 class="news-title"><?php the_title(); ?></h1>
-
-            <!-- Author -->
-            <p class="lead">
-                by
-                <a href="index.php">
-                    <?php the_author();  ?>
-                </a>
-            </p>
-
-            <hr>
-
-            <!-- Date/Time -->
-            <p><span class="glyphicon glyphicon-time"></span> Posted on
-                <?php the_date();  ?>
-                <?php the_time();  ?>
-            </p>
+            <ul class="news-info">
+              <li>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <?php the_time('F j, Y H:i');  ?>
+              </li>
+              <li>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="/teacher/"><?php the_author();  ?></a>
+              </li>
+            </ul>
 
             <hr>
                        <div class="row news-row">
