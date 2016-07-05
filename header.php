@@ -47,7 +47,7 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-bar" aria-expanded="false">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navigation-bar" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -58,23 +58,19 @@
                             </a>
 
                         </div>
-                        <div class="collapse navbar-collapse" id="navigation-bar">
-                            <ul class="nav navbar-nav">
                                 <?php
                                     wp_nav_menu( array(
                                         'menu'              => 'primary',
                                         'theme_location'    => 'primary',
                                         'depth'             => 2,
                                         'container'         => 'div',
-                                        'container_class'   => 'collapse navbar-collapse',
-                                        'container_id'      => 'navigation-bar',
+                                        'container_class'   => 'collapse navbar-collapse navigation-bar',
                                         'menu_class'        => 'nav navbar-nav',
                                         'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                                         'walker'            => new wp_bootstrap_navwalker())
                                     );
                                 ?>
 
-                            </ul>
                            <!--
                            <ul class="nav navbar-nav navbar-right">
                                 <li>
