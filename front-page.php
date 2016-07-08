@@ -14,6 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300&subset=greek' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
     <?php wp_head(); ?>
 </head>
 
@@ -85,14 +86,14 @@
                   <div class="jumbotron">
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/161740397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="//content.jwplatform.com/players/oR0z4Op6-CmyefMSJ.html" width="480" height="270" frameborder="0" scrolling="auto" allowfullscreen></iframe>
+                          </div>
                         </div>
                         <div class="col-md-3" id="jumbotron-text">
                           <div class="panel panel-default news-panel">
                               <div class="panel-body text-center">
-                                  <h4>Τελευταία Νεα</h4>
+                                  <h4>Πρόσφατες Ανακοινώσεις</h4>
                               </div>
                               <div class="panel-footer">
                                 <?php if( is_front_page() ) { ?>

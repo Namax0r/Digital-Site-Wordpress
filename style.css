@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: My Boostrap Theme
 Theme URI: https://wp-testbed-namax0r.c9users.io
 Description: My Bootstrap theme attempt
@@ -9,3 +9,4 @@ Author URI: https://wp-testbed-namax0r.c9users.io
 @import url('css/normalize.css');
 @import url('css/bootstrap.min.css');
 @import url('css/main.css');
+@import url('css/video.css');

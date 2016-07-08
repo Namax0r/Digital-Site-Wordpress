@@ -16,7 +16,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slimbox2.css" media="screen" type="text/css" />
-
     <?php wp_head(); ?>
 </head>
 

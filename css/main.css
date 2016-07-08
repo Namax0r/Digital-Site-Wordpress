@@ -369,6 +369,9 @@ article {
 #jumbotron-text .panel-footer{
     background: #fff;
 }
+.jw-skin-seven > .jw-toggle.jw-off  {
+    display: none !important;
+}
 .slide {
     max-height: 300px;
 }
