@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Digital Systems</title>
-    <meta name="description" content="The Digital Systems lesson at the University of Applied Sciences of Piraeus (Technological Education Institution of Piraeus). The site contains general information and services for current and new students.">
-    <meta name="keywords" content="Digital, Automation, University, Piraeus, Kalokasis, ikaros">
+    <title>Ψηφιακά Συστήματα</title>
+    <meta name="description" content="Ψηφιακά Συστήματα του Α.Ε.Ι. Πειραιά Τ.Τ. Η ιστοσελίδα περιέχει γενικές πληροφορίες και υπηρεσίες για τους παλιούς και νέους μαθητές.">
+    <meta name="keywords" content="Ψηφιακά, Συστήματα, Αυτοματιμός, Α.Ε.Ι.Τ.Τ, Πειραιας, Καλοκάσης, ikaros, daidalos, Συνδιαστικής, Ακολουθιακής, Λογικής">
     <meta name="author" content="Eleni Kaisari, Patryk Futoma">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=greek' rel='stylesheet' type='text/css'>
@@ -14,7 +14,6 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300&subset=greek' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
     <?php wp_head(); ?>
 </head>
 
@@ -26,13 +25,13 @@
                 <div id="language-selector">
                     <ul>
                         <li>
-                            <a href="../../">Ελληνικά</a>
+                            <a href="http://digitalsystems.daidalos.teipir.gr/">Ελληνικά</a>
                         </li>
                         <li>
                             |
                         </li>
                         <li>
-                            <a href="../home/">English</a>
+                            <a href="http://digitalsystems.daidalos.teipir.gr/en/">English</a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +43,7 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-bar" aria-expanded="false">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navigation-bar" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -55,23 +54,19 @@
                             </a>
 
                         </div>
-                        <div class="collapse navbar-collapse" id="navigation-bar">
-                            <ul class="nav navbar-nav">
                                 <?php
                                     wp_nav_menu( array(
                                         'menu'              => 'primary',
                                         'theme_location'    => 'primary',
                                         'depth'             => 2,
                                         'container'         => 'div',
-                                        'container_class'   => 'collapse navbar-collapse',
-                                        'container_id'      => 'navigation-bar',
+                                        'container_class'   => 'collapse navbar-collapse navigation-bar',
                                         'menu_class'        => 'nav navbar-nav',
                                         'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                                         'walker'            => new wp_bootstrap_navwalker())
                                     );
                                 ?>
 
-                            </ul>
                            <!--
                            <ul class="nav navbar-nav navbar-right">
                                 <li>
@@ -86,9 +81,9 @@
                   <div class="jumbotron">
                     <div class="row">
                         <div class="col-md-9">
-                          <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="//content.jwplatform.com/players/oR0z4Op6-CmyefMSJ.html" width="480" height="270" frameborder="0" scrolling="auto" allowfullscreen></iframe>
-                          </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="//content.jwplatform.com/players/oR0z4Op6-CmyefMSJ.html" width="480" height="270" frameborder="0" scrolling="auto" allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div class="col-md-3" id="jumbotron-text">
                           <div class="panel panel-default news-panel">
@@ -104,7 +99,7 @@
                                  ?>
                                  <div class="news-item">
                                  <h4 class="news-title">
-                                     <a href="<?php the_permalink();  ?>"><?php the_title_limit( 18, '...'); ?></a>
+                                     <a href="<?php the_permalink();  ?>"><?php the_title_limit( 26, '...'); ?></a>
                                  </h4>
                                  <ul class="news-info">
                                    <li>
@@ -129,10 +124,10 @@
         <div class="container-fluid" id="middle-part">
             <div class="container">
                 <div id="page-content">
-                                <article>
-                        The digital techniques are used extensively today and it is impossible to imagine modern electronic devices without them. The development of digital methods has led to small size devices, of low manufacturing and operational cost, high reliability and
-                        great potential. The integrated circuits technology, in only a few years has lead to the production of a new range of components, which has as a result the "age of the transistor", appear distant and to many "even romantic".
-                    </article>
+                        <article>
+                            Οι ψηφιακές τεχνικές χρησιμοποιούνται σήμερα εκτεταμένα και είναι αδύνατον να διανοηθούμε σύγχρονες ηλεκτρονικές συσκευές ξέχωρα από αυτές. Η βελτίωση των ψηφιακών μεθόδων έχει δώσει συσκευές μικρού μεγέθους, μικρού λειτουργικού κόστους, μεγάλης
+                            αξιοπιστίας και καταπληκτικών ικανοτήτων. Η τεχνολογία των ολοκληρωμένων κυκλωμάτων, μέσα σε λίγα χρόνια έχει παράγει νέες σειρές εξαρτημάτων, που κάνουν την εποχή του τρανζίστορ, να φαντάζει αρκετά απόμακρη.
+                        </article>
                     <div class="row" id="triple-photo-row">
                         <div class="col-md-4 col-sm-4">
                             <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/img/ujsintx4r3.png" alt="Lab Photo">

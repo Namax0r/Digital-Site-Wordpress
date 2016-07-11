@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php wp_title(' | ', true, 'right'); ?></title>
-    <meta name="description" content="The Digital Systems lesson at the University of Applied Sciences of Piraeus (Technological Education Institution of Piraeus). The site contains general information and services for current and new students.">
-    <meta name="keywords" content="Digital, Automation, University, Piraeus, Kalokasis, ikaros">
+    <meta name="description" content="Ψηφιακά Συστήματα του Α.Ε.Ι. Πειραιά Τ.Τ. Η ιστοσελίδα περιέχει γενικές πληροφορίες και υπηρεσίες για τους παλιούς και νέους μαθητές.">
+    <meta name="keywords" content="Ψηφιακά, Συστήματα, Αυτοματιμός, Α.Ε.Ι.Τ.Τ, Πειραιας, Καλοκάσης, ikaros, daidalos, Συνδιαστικής, Ακολουθιακής, Λογικής">
     <meta name="author" content="Eleni Kaisari, Patryk Futoma">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=greek' rel='stylesheet' type='text/css'>
@@ -16,6 +16,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slimbox2.css" media="screen" type="text/css" />
+
     <?php wp_head(); ?>
 </head>
 
@@ -28,13 +29,13 @@
                 <div id="language-selector">
                     <ul>
                         <li>
-                            <a href="../../">Ελληνικά</a>
+                            <a href="http://digitalsystems.daidalos.teipir.gr/">Ελληνικά</a>
                         </li>
                         <li>
                             |
                         </li>
                         <li>
-                            <a href="../home/">English</a>
+                            <a href="http://digitalsystems.daidalos.teipir.gr/en/">English</a>
                         </li>
                     </ul>
                 </div>

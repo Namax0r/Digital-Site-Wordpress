@@ -6,9 +6,9 @@ get_header(); ?>
 <div class="row">
     <div class="col-md-9 col-left-outer">
         <div class="col-md-12 col-left">
-          <h1>Archives</h1>
+          <h1>Αρχείο</h1>
           <p>
-            Looking for something specific ? Why not to search through the content on our website through the archive links below, or simply using the search bar.
+            Ψάχνετε για κάτι συγκεκριμένο ; Μπορείτε να ψάξετε το περιεχόμενο της ιστοσελίδας μας μέσω των συνδέσμων αρχείου παρακάτω, ή απλά χρησιμοποιώντας τη γραμμή αναζήτησης.
           </p>
           <!-- List of Archives -->
           <div class="row">
@@ -21,7 +21,7 @@ get_header(); ?>
 
 
 <?php static $count = 0;
-if ($count == "50") { break; }
+if ($count == "20") { break; }
 else { ?>
 
 
@@ -56,7 +56,7 @@ else { ?>
           <!-- Archive Side Navigation -->
           <div class="panel panel-default">
               <div class="panel-body">
-                  <h4>Search:</h4>
+                  <h4>Αναζήτηση:</h4>
               </div>
               <div class="panel-footer">
                   <ul>
@@ -66,7 +66,7 @@ else { ?>
           </div>
           <div class="panel panel-default">
               <div class="panel-body">
-                  <h4>Archives by Month:</h4>
+                  <h4>Αρχεία κατά μήνα:</h4>
               </div>
               <div class="panel-footer">
                   <ul>
@@ -76,21 +76,11 @@ else { ?>
           </div>
           <div class="panel panel-default">
               <div class="panel-body">
-                  <h4>Archives by Subject:</h4>
+                  <h4>Αρχεία με Θέμα:</h4>
               </div>
               <div class="panel-footer">
                 <ul>
                    <?php wp_list_categories(); ?>
-                </ul>
-              </div>
-          </div>
-          <div class="panel panel-default">
-              <div class="panel-body">
-                  <h4>Archives by Author:</h4>
-              </div>
-              <div class="panel-footer">
-                <ul>
-                   <?php wp_list_authors( 'optioncount=1' ); ?>
                 </ul>
               </div>
           </div>
