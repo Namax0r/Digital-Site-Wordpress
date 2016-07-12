@@ -2,6 +2,10 @@
             <!-- /.container-->
         </div>
         <!-- /.container-fluid-->
+        <a id="back-to-top" href="#">
+          <i class="fa fa-angle-up"></i>
+        </a>
+        <div id="arrow-divider"></div>
         <footer>
             <div class="container">
                     <div class="row">
@@ -126,13 +130,39 @@
     <script src="<?php echo esc_url( get_template_directory_uri() . '/js/slimbox2.js' ); ?>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/locales/bootstrap-datepicker.el.min.js"></script>
-    <script>
-    $('#datepicker').datepicker();
-      $('#datepicker').on("changeDate", function() {
-        $('#my_hidden_input').val(
-        $('#datepicker').datepicker('getFormattedDate')
-      );
+    <script> // Calendar widget
+    $(document).ready(function(){
+        $.fn.datepicker.defaults.language = 'el';
+        $('#datepicker').datepicker();
+          $('#datepicker').on("changeDate", function() {
+            $('#my_hidden_input').val(
+            $('#datepicker').datepicker('getFormattedDate')
+          );
+        });
     });
+    </script>
+    <script> // Back to the top arrow
+      if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+          backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+              $('#back-to-top').addClass('show');
+            } else {
+              $('#back-to-top').removeClass('show');
+            }
+          };
+        backToTop();
+        $(window).on('scroll', function () {
+          backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+          e.preventDefault();
+          $('html,body').animate({
+            scrollTop: 0
+          }, 700);
+        });
+      }
     </script>
     <?php wp_footer(); ?>
 </body>

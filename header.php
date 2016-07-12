@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=greek' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=greek' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300&subset=greek' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Tinos&subset=greek-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet">
@@ -39,10 +40,18 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <a href="http://www.teipir.gr/index.php/en/">
+                <div class="row">
+                  <div class="col-sm-1">
+                    <a href="http://www.teipir.gr/index.php/el/">
                         <img class="responsive" id="school-logo" src="<?php echo get_template_directory_uri(); ?>/img/TEI-logo_bw.png" alt="School Logo">
                     </a>
+                  </div>
+                  <div class="col-sm-10">
+                        <div id="school-title">
+                          <h4>Α.Ε.Ι. Πειραιά Τ.Τ. Τμήμα Μηχανικών Αυτοματισμού Τ.Ε.</h4>
+                          <h4>Εργαστήριο Ψηφιακών Συστημάτων</h4>
+                        </div>
+                  </div>
                 </div>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">

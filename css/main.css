@@ -142,6 +142,14 @@ h3, h4, h2, #language-selector, #enlist-button {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#school-title{
+	float: left;
+	color: #eee;
+	margin-left: 20px;
+}
+#school-title > h4{
+	font-family: 'Tinos', serif;
+}
 .active {
     -webkit-box-shadow: inset 3px -7px 0px -4px rgba(186, 24, 24, 1);
     -moz-box-shadow: inset 3px -7px 0px -4px rgba(186, 24, 24, 1);
@@ -443,7 +451,7 @@ article {
 }
 .ribbon {
     margin-top: 10px;
-    margin-left: -50px;
+    margin-left: -45px;
     width: 100%;
 }
 #triple-photo-row {
@@ -454,6 +462,20 @@ article {
 }
 .embedded-vid {
     margin-bottom: 5px;
+}
+#arrow-divider{
+	width: 100%;
+	height: 5px;
+	background: #34495e;
+}
+#back-to-top{
+	display: block;
+	background: #34495e;
+	width: 60px;
+	height: 20px;
+	color: #eee;
+	text-align: center;
+	margin: 0 auto;
 }
 footer {
     font-size: 13px;
@@ -719,6 +741,9 @@ Media Queries for Responsive Design.
     .news-title {
         margin-top: 0px;
     }
+    #school-title{
+      margin-left: 50px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -765,7 +790,9 @@ Media Queries for Responsive Design.
     .news-image{
       margin:0 auto;
     }
-
+    #school-title{
+  		display: none;
+  	}
 }
 
 /* Extra Small Devices, Phones */
