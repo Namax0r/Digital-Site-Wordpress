@@ -19,7 +19,7 @@ get_header(); ?>
                 </li>
                 <li>
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <a href="/teacher/">
+                    <a href="/professor/">
                         <?php the_author(); ?>
                     </a>
                 </li>

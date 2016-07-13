@@ -14,7 +14,7 @@
         <h4>Ημερολόγιο</h4>
     </div>
     <div class="panel-footer" id="calendar-panel">
-        <div id="datepicker" data-date="<?php echo date('m-d-Y'); ?>"></div>
+        <div id="datepicker" data-date="<?php echo date('d-m-Y'); ?>"></div>
         <input type="hidden" id="my_hidden_input">
     </div>
 </div>

@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Ψηφιακά Συστήματα</title>
-    <meta name="description" content="Ψηφιακά Συστήματα του Α.Ε.Ι. Πειραιά Τ.Τ. Η ιστοσελίδα περιέχει γενικές πληροφορίες και υπηρεσίες για τους παλιούς και νέους μαθητές.">
-    <meta name="keywords" content="Ψηφιακά, Συστήματα, Αυτοματιμός, Α.Ε.Ι.Τ.Τ, Πειραιας, Καλοκάσης, ikaros, daidalos, Συνδιαστικής, Ακολουθιακής, Λογικής">
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <meta name="keywords" content="Ψηφιακά, Συστήματα, digital, systems, system, Αυτοματιμός, Α.Ε.Ι.Τ.Τ, Πειραιας, Καλοκάσης, ikaros, daidalos, Συνδιαστικής, Ακολουθιακής, Λογικής, Νίκος , Νικος , νίκος , νικος , νίκοσ , νικοσ , Nikos , nikos , Καλοκάσης , Καλοκασης , καλοκάσης , καλοκασης , καλοκάσησ , καλοκασησ , Kalokasis , kalokasis , Ν. , Καλοκάση , Kalokasi , Ψηφιακά , Ψηφιακα , ψηφιακά , ψηφιακα , Psifiaka , psifiaka , Συστήματα , Συστηματα , συστήματα , συστηματα , Systhmata , systhmata , Systimata , systimata , Sistimata , sistimata , Συστημάτων , Συστηματων , συστημάτων , συστηματων,  Εφαρμογές , Εφαρμογες , εφαρμογές , εφαρμογες , Efarmoges, efarmoges, Συνδιαστικά , Συνδιαστικα , συνδιαστικά , συνδιαστικα, Syndiastika , syndiastika ,  Συνδιαστικής, Συνδιαστικης , συνδιαστικής , συνδιαστικης , Ακολουθιακά , Ακολουθιακα , ακολουθιακά , ακολουθιακα , Akolouthiaka , akolouthika , akolou8iaka,  Ακολουθιακής , Ακολουθιακης , ακολουθιακής , ακολουθιακης , Λογικής , Λογικης , λογικής , λογικης , Κυκλώματα , Κυκλωματα , κυκλώματα , κυκλωματα , Α.Ε.Ι. , ΑΕΙ , α.ε.ι. , αει , Πειραιάς , Πειραιας , πειραιάς , πειραιας , Τ.Ε.Ι. ,ΤΕΙ , τ.ε.ι. , τει , Εργαστήριο , Εργαστηριο , εργαστήριο , εργαστηριο , Τμήμα , Τμημα , τμήμα , τμημα , Μηχανικών , Μηχανικων , μηχανικών , μηχανικων , Μηχανικοί , Μηχανικοι , μηχανικοί , μηχανικοι , Αυτοματισμού , Αυτοματισμου , αυτοματισμού , αυτοματισμου , Αυτοματισμός , Αυτοματισμος , αυτοματισμός , αυτοματισμος , Τεχνικού , Τεχνικου , τεχνικού , τεχνικου , Τομέα , Τομεα , τομέα , τομεα , Εφαρμογών , Εφαρμογων , εφαρμογών , εφαρμογων , Υπεύθυνος , Υπευθυνος , υπεύθυνος , υπευθυνος  , Καθηγητής , Καθηγητης , καθηγητής , καθηγητης , Ο.Κ. , ΟΚ , ο.κ. , οκ , Ι , 1 , ΙΙ , 2 , Εργασίες , Εργασιες , εργασίες , εργασιες , Σπουδαστών , Σπουδαστων , σπουδαστών , σπουδαστων , Δαίδαλος , Δαιδαλος , δαίδαλος , δαιδαλος , Ίκαρος , Ικαρος , ίκαρος , ικαρος ">
     <meta name="author" content="Eleni Kaisari, Patryk Futoma">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=greek' rel='stylesheet' type='text/css'>
@@ -26,13 +26,13 @@
                 <div id="language-selector">
                     <ul>
                         <li>
-                            <a href="http://digitalsystems.daidalos.teipir.gr/">Ελληνικά</a>
+                            <a href="https://digitalsystems.daidalos.teipir.gr/">Ελληνικά</a>
                         </li>
                         <li>
                             |
                         </li>
                         <li>
-                            <a href="http://digitalsystems.daidalos.teipir.gr/en/">English</a>
+                            <a href="https://digitalsystems.daidalos.teipir.gr/en/">English</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                                <img alt="Brand" id="teacher-logo" src="<?php echo get_template_directory_uri(); ?>/img/TOCFra2.jpg">
+                                <img alt="Teacher Logo" id="teacher-logo" src="<?php echo get_template_directory_uri(); ?>/img/TOCFra2.jpg">
                             </a>
 
                         </div>
@@ -103,7 +103,7 @@
                                 <?php if( is_front_page() ) { ?>
                                 <?php
                                  global $post;
-                                 $myposts = get_posts('numberposts=5');
+                                 $myposts = get_posts('numberposts=3');
                                  foreach($myposts as $post) :
                                  ?>
                                  <div class="news-item">
@@ -113,7 +113,7 @@
                                  <ul class="news-info">
                                    <li>
                                      <i class="fa fa-calendar" aria-hidden="true"></i>
-                                     <?php the_time('F j, Y H:i');  ?>
+                                     <?php the_time('F j, Y');  ?>
                                    </li>
                                  </ul>
                                </div>
@@ -121,6 +121,11 @@
                                   <?php } ?>
                               </div>
                               </div>
+                              <a href="http://digitalsystems.daidalos.teipir.gr/test/" id="enlist-button" class="btn btn-default btn-lg btn-block" data-toggle="tooltip" data-placement="top" title="Οι εγγραφές για το εργαστήριο ανοίγουν τον Οκτώβρη.">
+                                  <i class="fa fa-clipboard"></i>
+                                  Εγγραφές<br/>
+                                  εργαστηρίου
+                              </a>
                         </div>
                     </div>
                     <!-- /.row-->

@@ -2,10 +2,10 @@
             <!-- /.container-->
         </div>
         <!-- /.container-fluid-->
-        <a id="back-to-top" href="#">
+        <!--<a id="back-to-top" href="#">
           <i class="fa fa-angle-up"></i>
         </a>
-        <div id="arrow-divider"></div>
+        <div id="arrow-divider"></div>-->
         <footer>
             <div class="container">
                     <div class="row">
@@ -97,7 +97,7 @@
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-12 footer-column">
-                            <img id="footer-ribbon" src="http://digitalsystems.daidalos.teipir.gr/en/wp-content/uploads/sites/2/2016/07/logoclean.png" alt="Ο.Κ.">
+                            <img id="footer-ribbon" src="<?php echo get_template_directory_uri(); ?>/img/logoclean.png" alt="Ο.Κ.">
                             <ul id="footer-contact">
                                 <h3 class="footer-title">Επικοινωνία</h3>
                                 <li>
