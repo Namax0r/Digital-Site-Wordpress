@@ -37,7 +37,7 @@
                     </ul>
                 </div>
                 <div class="row">
-                  <div class="col-sm-1">
+                  <div class="col-xs-1">
                     <a href="http://www.teipir.gr/index.php/el/">
                         <img class="responsive" id="school-logo" src="<?php echo get_template_directory_uri(); ?>/img/TEI-logo_bw.png" alt="School Logo">
                     </a>
@@ -58,7 +58,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                            <a class="navbar-logo" href="<?php echo home_url(); ?>">
                                 <img alt="Teacher Logo" id="teacher-logo" src="<?php echo get_template_directory_uri(); ?>/img/TOCFra2.jpg">
                             </a>
 

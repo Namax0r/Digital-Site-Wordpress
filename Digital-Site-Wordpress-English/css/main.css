@@ -215,7 +215,11 @@ h3, h4, h2, #language-selector, #enlist-button {
     background-color: #ba1818 !important;
 }
 
+/* Hidden until lab registration opens */
 
+#enlist-tab {
+    display: none;
+}
 #reg-rules-body {
     background: none;
     border: 1px solid #fbe77e;
@@ -395,9 +399,8 @@ article {
     padding: 20px;
 }
 #enlist-button {
-    display:none;
     position: relative;
-    bottom: -23px; /* Edit here to change the position of an enlist button.
+    bottom: 10px; /* Edit here to change the position of an enlist button.
                        - more moves the button down. Don't forget px*/
     padding: 10px;
     font-size: 25px;
@@ -459,8 +462,8 @@ article {
 #triple-photo-row {
     margin-top: 10px;
 }
-.photo-row{
-  margin-top: 15px;
+.photo-row {
+    margin-top: 15px;
 }
 .embedded-vid {
     margin-bottom: 5px;
@@ -703,7 +706,7 @@ Media Queries for Responsive Design.
       bottom: -98px;
     }
     #enlist-button {
-      bottom: -11px;
+      bottom: -195px;
     }
     .ribbon {
         display: none;
@@ -714,8 +717,10 @@ Media Queries for Responsive Design.
     #calendar-panel{
       padding-left: 0px;
     }
+    #school-title{
+      margin-left: 35px;
+    }
 }
-
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 992px) {
@@ -733,6 +738,9 @@ Media Queries for Responsive Design.
       position: relative;
       bottom: 0px;
       text-align: center;
+    }
+    #enlist-button {
+      display: none;
     }
     .col-left-outer {
         padding-right: 15px;

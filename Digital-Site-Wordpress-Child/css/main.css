@@ -142,14 +142,6 @@ h3, h4, h2, #language-selector, #enlist-button {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#school-title{
-	float: left;
-	color: #eee;
-	margin-left: 20px;
-}
-#school-title > h4{
-	font-family: 'Tinos', serif;
-}
 .active {
     -webkit-box-shadow: inset 3px -7px 0px -4px rgba(186, 24, 24, 1);
     -moz-box-shadow: inset 3px -7px 0px -4px rgba(186, 24, 24, 1);
@@ -215,7 +207,11 @@ h3, h4, h2, #language-selector, #enlist-button {
     background-color: #ba1818 !important;
 }
 
+/* Hidden until lab registration opens */
 
+#enlist-tab {
+    display: none;
+}
 #reg-rules-body {
     background: none;
     border: 1px solid #fbe77e;
@@ -227,12 +223,14 @@ h3, h4, h2, #language-selector, #enlist-button {
     color: #333;
 }
 #button {
-  background-color: #5bc0de;
-  border-color: #46b8da;
-  margin-top: 48px;
+  background-color: #2980b9;
+  border-color: #3498db;
+  position: relative;
+  bottom: -73px;
 }
 .form-control-feedback{
   right: 10px !important;
+  top: 35px !important;
 }
 .asterisk{
   position: relative;
@@ -395,7 +393,6 @@ article {
     padding: 20px;
 }
 #enlist-button {
-    display:none;
     position: relative;
     bottom: -23px; /* Edit here to change the position of an enlist button.
                        - more moves the button down. Don't forget px*/
@@ -453,7 +450,7 @@ article {
 }
 .ribbon {
     margin-top: 10px;
-    margin-left: -45px;
+    margin-left: -50px;
     width: 100%;
 }
 #triple-photo-row {
@@ -464,20 +461,6 @@ article {
 }
 .embedded-vid {
     margin-bottom: 5px;
-}
-#arrow-divider{
-	width: 100%;
-	height: 5px;
-	background: #34495e;
-}
-#back-to-top{
-	display: block;
-	background: #34495e;
-	width: 60px;
-	height: 20px;
-	color: #eee;
-	text-align: center;
-	margin: 0 auto;
 }
 footer {
     font-size: 13px;
@@ -714,6 +697,9 @@ Media Queries for Responsive Design.
     #calendar-panel{
       padding-left: 0px;
     }
+    #button {
+      bottom: -96px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -740,8 +726,8 @@ Media Queries for Responsive Design.
     .news-title {
         margin-top: 0px;
     }
-    #school-title{
-      margin-left: 50px;
+    #button {
+      bottom: -25px;
     }
     .navbar-logo {
         margin-left: 0px;
@@ -792,9 +778,7 @@ Media Queries for Responsive Design.
     .news-image{
       margin:0 auto;
     }
-    #school-title{
-  		display: none;
-  	}
+
 }
 
 /* Extra Small Devices, Phones */

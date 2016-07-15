@@ -6,13 +6,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php if (function_exists('is_tag') && is_tag()) { echo 'Tag Archive for &quot;'.$tag.'&quot; - '; } elseif (is_archive()) { wp_title(''); echo ' Αρχείο - '; } elseif (is_search()) { echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; } elseif (!(is_404()) && (is_single()) || (is_page())) { wp_title(''); echo ' - '; } elseif (is_404()) { echo 'Not Found - '; } if (is_home()) { echo 'Ανακοινώσεις'; echo ' - '; bloginfo('name'); } else { bloginfo('name'); } if ($paged>1) {echo '- page ', $paged;} ?></title>
     <meta name="description" content="<?php bloginfo('description'); ?>" />
-    <meta name="keywords" content="Ψηφιακά, Συστήματα, digital, systems, system, Αυτοματιμός, Α.Ε.Ι.Τ.Τ, Πειραιας, Καλοκάσης, ikaros, daidalos, Συνδιαστικής, Ακολουθιακής, Λογικής, Νίκος , Νικος , νίκος , νικος , νίκοσ , νικοσ , Nikos , nikos , Καλοκάσης , Καλοκασης , καλοκάσης , καλοκασης , καλοκάσησ , καλοκασησ , Kalokasis , kalokasis , Ν. , Καλοκάση , Kalokasi , Ψηφιακά , Ψηφιακα , ψηφιακά , ψηφιακα , Psifiaka , psifiaka , Συστήματα , Συστηματα , συστήματα , συστηματα , Systhmata , systhmata , Systimata , systimata , Sistimata , sistimata , Συστημάτων , Συστηματων , συστημάτων , συστηματων,  Εφαρμογές , Εφαρμογες , εφαρμογές , εφαρμογες , Efarmoges, efarmoges, Συνδιαστικά , Συνδιαστικα , συνδιαστικά , συνδιαστικα, Syndiastika , syndiastika ,  Συνδιαστικής, Συνδιαστικης , συνδιαστικής , συνδιαστικης , Ακολουθιακά , Ακολουθιακα , ακολουθιακά , ακολουθιακα , Akolouthiaka , akolouthika , akolou8iaka,  Ακολουθιακής , Ακολουθιακης , ακολουθιακής , ακολουθιακης , Λογικής , Λογικης , λογικής , λογικης , Κυκλώματα , Κυκλωματα , κυκλώματα , κυκλωματα , Α.Ε.Ι. , ΑΕΙ , α.ε.ι. , αει , Πειραιάς , Πειραιας , πειραιάς , πειραιας , Τ.Ε.Ι. ,ΤΕΙ , τ.ε.ι. , τει , Εργαστήριο , Εργαστηριο , εργαστήριο , εργαστηριο , Τμήμα , Τμημα , τμήμα , τμημα , Μηχανικών , Μηχανικων , μηχανικών , μηχανικων , Μηχανικοί , Μηχανικοι , μηχανικοί , μηχανικοι , Αυτοματισμού , Αυτοματισμου , αυτοματισμού , αυτοματισμου , Αυτοματισμός , Αυτοματισμος , αυτοματισμός , αυτοματισμος , Τεχνικού , Τεχνικου , τεχνικού , τεχνικου , Τομέα , Τομεα , τομέα , τομεα , Εφαρμογών , Εφαρμογων , εφαρμογών , εφαρμογων , Υπεύθυνος , Υπευθυνος , υπεύθυνος , υπευθυνος  , Καθηγητής , Καθηγητης , καθηγητής , καθηγητης , Ο.Κ. , ΟΚ , ο.κ. , οκ , Ι , 1 , ΙΙ , 2 , Εργασίες , Εργασιες , εργασίες , εργασιες , Σπουδαστών , Σπουδαστων , σπουδαστών , σπουδαστων , Δαίδαλος , Δαιδαλος , δαίδαλος , δαιδαλος , Ίκαρος , Ικαρος , ίκαρος , ικαρος ">
+    <meta name="keywords" content="Ψηφιακά, Συστήματα, Αυτοματιμός, Α.Ε.Ι.Τ.Τ, Πειραιας, Καλοκάσης, ikaros, daidalos, Συνδιαστικής, Ακολουθιακής, Λογικής">
     <meta name="author" content="Eleni Kaisari, Patryk Futoma">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=greek' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=greek' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300&subset=greek' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Tinos&subset=greek-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet">
@@ -97,3 +96,4 @@
         <!-- /.container-fluid-->
         <div class="container-fluid" id="middle-part">
             <div class="container">
+              <div id="page-content">

@@ -1,0 +1,11 @@
+/*
+Theme Name: My Boostrap Theme English
+Theme URI: https://github.com/Namax0r/Digital-Site-Wordpress
+Description: Digital Site Wordpress theme built with bootstrap
+Version: 1
+Author: Patrykiakos
+Author URI: https://github.com/Namax0r/
+*/
+@import url('css/normalize.css');
+@import url('css/bootstrap.min.css');
+@import url('css/main.css');
