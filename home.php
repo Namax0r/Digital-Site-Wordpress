@@ -4,6 +4,8 @@ Template Name: News Home
 */
 get_header(); ?>
 
+<!--  I'M USING HOMEdotPHP -->
+
 <div class="row">
     <div class="col-md-9 col-left-outer news-post">
         <div class="col-md-12 col-left">

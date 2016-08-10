@@ -43,7 +43,7 @@ get_header(); ?>
             <!-- Archive Side Navigation -->
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h4>Αναζήτηση:</h4>
+                    <h4>Αναζήτηση</h4>
                 </div>
                 <div class="panel-footer">
                     <ul>
@@ -53,22 +53,21 @@ get_header(); ?>
             </div>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h4>Αρχεία κατά μήνα:</h4>
+                    <h4>Αρχείο</h4>
                 </div>
                 <div class="panel-footer">
-                    <ul>
-                        <?php wp_get_archives( 'type=monthly'); ?>
+                    <ul class="sidebar-widget-ul">
+                        <?php wp_list_categories('title_li='); ?>
                     </ul>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h4>Αρχεία με Θέμα:</h4>
+                    <h4>Ημερολόγιο</h4>
                 </div>
-                <div class="panel-footer">
-                    <ul>
-                        <?php wp_list_categories(); ?>
-                    </ul>
+                <div class="panel-footer" id="calendar-panel">
+                    <div id="datepicker" data-date="<?php echo date('d-m-Y'); ?>"></div>
+                    <input type="hidden" id="my_hidden_input">
                 </div>
             </div>
         </div>

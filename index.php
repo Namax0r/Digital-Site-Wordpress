@@ -3,6 +3,7 @@
 Template Name: Default Main Page
 */
 get_header(); ?>
+<!--  I'M USING INDEXdotPHP -->
 <?php query_posts( 'posts_per_page=12'); while(have_posts()) : the_post(); ?>
 <div class="row">
     <div class="col-md-9">

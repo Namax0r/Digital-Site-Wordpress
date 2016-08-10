@@ -1,11 +1,8 @@
-/* 
-Theme Name: My Boostrap Theme Child
-Theme URI: https://wp-testbed-namax0r.c9users.io
-Description: My Bootstrap theme attempt
-Version: 1
-Author: Patrykiakos
-Author URI: https://wp-testbed-namax0r.c9users.io
+/*
+Theme Name: Tarakimu Child
+Theme URI: https://github.com/Namax0r/Digital-Site-Wordpress
+Description: Wordpress theme for Digital Systems Laboratory of Technological Educational Institute of Piraeus. Child-Theme version.
+Version: 0.7
+Author: Namax0r
+Author URI: https://github.com/Namax0r/
 */
-@import url('css/normalize.css');
-@import url('css/bootstrap.min.css');
-@import url('css/main.css');

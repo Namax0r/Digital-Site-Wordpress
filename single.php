@@ -21,7 +21,7 @@ get_header(); ?>
                     </a>
                 </li>
             </ul>
-            <hr>
+            <hr class="news-divider">
             <div class="row news-row">
                 <div class="col-md-3 col-sm-3 news-img-container">
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">

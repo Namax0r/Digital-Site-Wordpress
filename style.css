@@ -1,11 +1,8 @@
 /*
-Theme Name: My Boostrap Theme
+Theme Name: Tarakimu GR
 Theme URI: https://github.com/Namax0r/Digital-Site-Wordpress
-Description: Digital Site Wordpress theme built with bootstrap
-Version: 1
-Author: Patrykiakos
+Description: Wordpress theme for Digital Systems Laboratory of Technological Educational Institute of Piraeus. Greek version.
+Version: 0.7
+Author: Namax0r
 Author URI: https://github.com/Namax0r/
 */
-@import url('css/normalize.css');
-@import url('css/bootstrap.min.css');
-@import url('css/main.css');
