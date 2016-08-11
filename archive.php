@@ -7,9 +7,11 @@ get_header(); ?>
     <div class="col-md-9 col-left-outer">
         <div class="col-md-12 col-left">
             <h1>Αρχείο</h1>
+            <hr />
             <p>
                 Ψάχνετε για κάτι συγκεκριμένο ; Μπορείτε να ψάξετε το περιεχόμενο της ιστοσελίδας μας μέσω των συνδέσμων αρχείου παρακάτω, ή απλά χρησιμοποιώντας τη γραμμή αναζήτησης.
             </p>
+            <hr />
             <div class="row">
                 <div class="col-md-12 col-sm-12 news-text">
                     <!-- Start the Loop. -->

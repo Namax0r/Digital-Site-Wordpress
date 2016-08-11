@@ -107,7 +107,7 @@
         <img id="footer-ribbon" src="<?php echo get_template_directory_uri(); ?>/img/logoclean.png" alt="Ο.Κ.">
       </div>
       <div class="col-md-2" id="search">
-<h4>Γλώσσα</h4>
+        <h4><span><i class="fa fa-globe" aria-hidden="true"></i></span> Γλώσσα</h4>
 <!-- Language button -->
 <div class="btn-group ">
 <button type="button" class="btn" id="language-btn">Ελληνικά</button>
