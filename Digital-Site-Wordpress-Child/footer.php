@@ -2,10 +2,6 @@
             <!-- /.container-->
         </div>
         <!-- /.container-fluid-->
-        <!--<a id="back-to-top" href="#">
-          <i class="fa fa-angle-up"></i>
-        </a>
-        <div id="arrow-divider"></div>-->
         <footer>
     <div class="container">
         <div class="row">
@@ -263,7 +259,7 @@ $('#datepicker').datepicker();
   ga('create', 'UA-81259947-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script> // Back to the top arrow
+<!--<script> // Back to the top arrow
 if ($('#back-to-top').length) {
 var scrollTrigger = 100, // px
   backToTop = function () {
@@ -285,7 +281,7 @@ $('#back-to-top').on('click', function (e) {
   }, 700);
 });
 }
-</script>
+</script>-->
 <!-- Expand bootstrap navbar dropdowns on hover -->
 <script>
 $(document).ready(function(){

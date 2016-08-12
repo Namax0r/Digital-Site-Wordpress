@@ -13,7 +13,7 @@ get_header(); ?>
     </div>
     <div class="col-md-3">
         <div class="col-md-12 col-right">
-            <!-- Archive Side Navigation -->
+            <!-- Side Navigation -->
             <?php get_sidebar(); ?>
         </div>
     </div>

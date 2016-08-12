@@ -8,16 +8,15 @@ get_header(); ?>
         <div class="col-md-12 col-left">
             <div class="row">
                 <div class="col-md-12 col-sm-12 news-text">
-
                     <!-- Start the Loop. -->
                     <h1>Αποτελέσματα αναζήτησης:</h1>
                     <hr />
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <?php static $count=0 ; if ($count=="20" ) { break; } else { ?>
-
+                    <div class="search-results-wrapper">
                     <h4 class="news-title">
-      <a href="<?php the_permalink();  ?>"><?php the_title(); ?></a>
-  </h4>
+                      <a href="<?php the_permalink();  ?>"><?php the_title(); ?></a>
+                    </h4>
                     <ul class="news-info">
                         <li>
                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -30,6 +29,7 @@ get_header(); ?>
                             </a>
                         </li>
                     </ul>
+                    </div>
                     <?php $count++; } ?>
                   <?php endwhile; ?>
                   <?php else : ?>
@@ -52,36 +52,8 @@ get_header(); ?>
     </div>
     <div class="col-md-3">
         <div class="col-md-12 col-right">
-            <!-- Archive Side Navigation -->
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h4>Αναζήτηση</h4>
-                </div>
-                <div class="panel-footer">
-                    <ul>
-                        <?php get_search_form(); ?>
-                    </ul>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h4>Αρχείο</h4>
-                </div>
-                <div class="panel-footer">
-                    <ul class="sidebar-widget-ul">
-                        <?php wp_list_categories('title_li='); ?>
-                    </ul>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h4>Ημερολόγιο</h4>
-                </div>
-                <div class="panel-footer" id="calendar-panel">
-                    <div id="datepicker" data-date="<?php echo date('d-m-Y'); ?>"></div>
-                    <input type="hidden" id="my_hidden_input">
-                </div>
-            </div>
+          <!-- Side Navigation -->
+          <?php get_sidebar(); ?>
         </div>
     </div>
 </div>

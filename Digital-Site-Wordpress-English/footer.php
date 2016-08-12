@@ -3,10 +3,6 @@
         </div>
         <!-- /.container-fluid-->
         <footer>
-          <!--<a id="back-to-top" href="#">
-            <i class="fa fa-angle-up"></i>
-          </a>
-          <div id="arrow-divider"></div>-->
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 footer-column">
@@ -206,7 +202,7 @@
       $('[data-toggle="tooltip"]').tooltip()
     })
     </script>
-    <script> // Back to the top arrow
+    <!--<script> // Back to the top arrow
       if ($('#back-to-top').length) {
         var scrollTrigger = 100, // px
           backToTop = function () {
@@ -228,7 +224,7 @@
           }, 700);
         });
       }
-    </script>
+    </script>-->
     <!-- Expand bootstrap navbar dropdowns on hover -->
     <script>
     $(document).ready(function(){

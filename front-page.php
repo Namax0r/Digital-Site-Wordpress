@@ -23,18 +23,17 @@
     <?php wp_head(); ?>
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
     <script>
-    window.cookieconsent_options = {
-        learnMore: 'More info',
-        dismiss: 'I understand',
-        message: 'Some custom message here',
-      //  theme: 'styles/cookie_consent_theme.css',
-        theme: 'dark-bottom',
-        link: 'http://localhost:8888/en/privacy-policy/',
-    };
-</script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
-<!-- End Cookie Consent plugin -->
+      window.cookieconsent_options = {
+          learnMore: 'Πολιτική Απορρήτου',
+          dismiss: 'Κατάλαβα',
+          message: 'Αυτή η ιστοσελίδα χρησιμοποιεί cookies για να μας βοηθήσουν να σας παρέχουμε καλύτερη εμπειρία χρήστη. Εάν συνεχίσετε να χρησιμοποιείτε αυτή την ιστοσελίδα μας δίνετε συγκατάθεση για τα cookies που χρησιμοποιούνται. Διαβάστε περισσότερα στην',
+        //  theme: 'styles/cookie_consent_theme.css',
+          theme: 'dark-bottom',
+          link: 'http://localhost:8888/en/privacy-policy/',
+          };
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
 
 </head>
 
@@ -122,7 +121,7 @@
                          <i class="fa fa-calendar" aria-hidden="true"></i>
                          <?php the_time('F j, Y');  ?>
                        </li>
-                     </ul>
+                    </ul>
                    </div>
                      <?php endforeach; ?>
                       <?php } ?>

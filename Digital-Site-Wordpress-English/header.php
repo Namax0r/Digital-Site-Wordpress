@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slimbox2.min.css" media="screen" type="text/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
@@ -23,6 +22,19 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d0909">
     <meta name="theme-color" content="#0d0909">
     <?php wp_head(); ?>
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script>
+      window.cookieconsent_options = {
+          learnMore: 'Privacy Policy',
+          dismiss: 'I understand',
+          message: 'This website uses cookies to help us provide you with best user experience. By continuing to use this website you are giving consent to cookies being used. Read more in our',
+        //  theme: 'styles/cookie_consent_theme.css',
+          theme: 'dark-bottom',
+          link: 'http://localhost:8888/en/privacy-policy/',
+          };
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
 </head>
 
 <body>

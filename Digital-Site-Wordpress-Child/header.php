@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slimbox2.min.css" media="screen" type="text/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
@@ -23,6 +22,19 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d0909">
     <meta name="theme-color" content="#0d0909">
     <?php wp_head(); ?>
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script>
+      window.cookieconsent_options = {
+          learnMore: 'Πολιτική Απορρήτου',
+          dismiss: 'Κατάλαβα',
+          message: 'Αυτή η ιστοσελίδα χρησιμοποιεί cookies για να μας βοηθήσουν να σας παρέχουμε καλύτερη εμπειρία χρήστη. Εάν συνεχίσετε να χρησιμοποιείτε αυτή την ιστοσελίδα μας δίνετε συγκατάθεση για τα cookies που χρησιμοποιούνται. Διαβάστε περισσότερα στην',
+        //  theme: 'styles/cookie_consent_theme.css',
+          theme: 'dark-bottom',
+          link: 'http://localhost:8888/en/privacy-policy/',
+          };
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
 </head>
 
 <body>
@@ -32,20 +44,20 @@
       <div class="container-fluid" id="header-wrapper">
 					<div class="row" id="header">
 						<div class="container">
-						<div class="col-sm-1">
-							<a href="http://www.teipir.gr/index.php/el/">
-							<img class="responsive" id="school-logo" src="<?php echo get_template_directory_uri(); ?>/img/TEI-logo_bw.png" alt="School Logo">
-							</a>
+  						<div class="col-sm-1">
+  							<a href="http://www.teipir.gr/index.php/el/">
+  							<img class="responsive" id="school-logo" src="<?php echo get_template_directory_uri(); ?>/img/TEI-logo_bw.png" alt="School Logo">
+  							</a>
+  						</div>
+  						<div class="col-sm-10">
+    						<div id="school-title">
+                	<h4>Εργαστήριο Ψηφιακών Συστημάτων</h4>
+                	<hr id="title-divider">
+                	<h4>Α.Ε.Ι. Πειραιά Τ.Τ. Τμήμα Μηχανικών Αυτοματισμού Τ.Ε.</h4>
+    					  </div>
+  					  </div>
 						</div>
-												<div class="col-sm-10">
-																	<div id="school-title">
-						<h4>Εργαστήριο Ψηφιακών Συστημάτων</h4>
-						<hr id="title-divider">
-						<h4>Α.Ε.Ι. Πειραιά Τ.Τ. Τμήμα Μηχανικών Αυτοματισμού Τ.Ε.</h4>
 					</div>
-						</div>
-						</div>
-						</div>
 </div>
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -62,22 +74,22 @@
                         </a>
 
                     </div>
-                            <?php
-                                wp_nav_menu( array(
-                                    'menu'              => 'primary',
-                                    'theme_location'    => 'primary',
-                                    'depth'             => 2,
-                                    'container'         => 'div',
-                                    'container_class'   => 'collapse navbar-collapse navigation-bar',
-                                    'menu_class'        => 'nav navbar-nav',
-                                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                    'walker'            => new wp_bootstrap_navwalker())
-                                );
-                            ?>
+                        <?php
+                          wp_nav_menu( array(
+                            'menu'              => 'primary',
+                            'theme_location'    => 'primary',
+                            'depth'             => 2,
+                            'container'         => 'div',
+                            'container_class'   => 'collapse navbar-collapse navigation-bar',
+                            'menu_class'        => 'nav navbar-nav',
+                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                            'walker'            => new wp_bootstrap_navwalker())
+                          );
+                        ?>
+                  </div>
+                  <!-- /.container -->
                 </div>
-                <!-- /.container -->
-              </div>
-              <!-- /.container-fluid -->
+                <!-- /.container-fluid -->
             </nav>
             <div class="container-fluid" id="middle-part">
-			           <div class="container"  id="page-content">
+			          <div class="container"  id="page-content">

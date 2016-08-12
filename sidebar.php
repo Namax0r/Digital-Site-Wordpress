@@ -1,4 +1,6 @@
 <!-- Blog Sidebar Widgets Column -->
+<div class="row">
+  <div class="col-md-12">
 <div class="panel panel-default">
     <div class="panel-body">
         <h4>Αναζήτηση</h4>
@@ -9,6 +11,8 @@
         </ul>
     </div>
 </div>
+  </div>
+    <div class="col-md-12 col-sm-6">
 <div class="panel panel-default">
     <div class="panel-body">
         <h4>Αρχείο</h4>
@@ -19,6 +23,8 @@
         </ul>
     </div>
 </div>
+</div>
+  <div class="col-md-12 col-sm-6">
 <div class="panel panel-default">
     <div class="panel-body">
         <h4>Ημερολόγιο</h4>
@@ -27,6 +33,8 @@
         <div id="datepicker" data-date="<?php echo date('d-m-Y'); ?>"></div>
         <input type="hidden" id="my_hidden_input">
     </div>
+</div>
+</div>
 </div>
 <!-- Side Widget Well
 <div class="well">
