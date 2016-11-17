@@ -2,8 +2,3 @@
 
 ### Responsive "Tarakimu" Wordpress theme built with Bootstrap 3 for
 
-##### Department of Automation Engineering
-
-##### Digital Systems Laboratory
-
-##### University of Piraeus
